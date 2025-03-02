@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    main {
+        @apply w-full max-w-[1440px] ml-auto px-4 md:px-[25vw] py-11;
+    }
+}
+
+@layer components {
+    .link {
+        @apply text-gray-900 underline hover:text-gray-600;
+    }
+}

@@ -21,12 +21,7 @@
 
 <template>
     <main>
-        <p>
-            Posts will be here.<br />
-            <NuxtLink to="/posts/1">
-                Check out some post here.
-            </NuxtLink><br />
-        </p>
-        <PostCard v-for="post in PostStore.allPosts.posts" :key="post.id" v-bind="post" />
+        <h1 class="text-3xl font-bold mb-8">Posts</h1>
+        <PostCard v-for="post in PostStore.allPosts.posts" :key="post.id" v-bind="post" class="mb-4" />
     </main>
 </template>
