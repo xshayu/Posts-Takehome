@@ -11,5 +11,8 @@
 @layer components {
     .link {
         @apply text-gray-900 underline hover:text-gray-600;
+        &.router-link-active {
+            @apply font-semibold;
+        }
     }
 }
