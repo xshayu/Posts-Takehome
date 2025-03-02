@@ -7,3 +7,9 @@ export interface Post {
     views: number;
     userId: number;
 };
+
+export interface AllPosts {
+    posts: Array<Post>;
+    total: number;
+    _lastFetched?: Date | null
+};
